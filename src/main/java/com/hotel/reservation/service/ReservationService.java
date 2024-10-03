@@ -31,7 +31,8 @@ public class ReservationService {
     private HotelService hotelService;
 
     @Autowired
-    private NotificationService notificationService;  // Serviço de Notificações
+    // Serviço de Notificações
+    private NotificationService notificationService;
 
     @Transactional
     public Reservation createReservation(Long hotelId, Long roomId, String customerName, String customerEmail, LocalDate checkIn, LocalDate checkOut) {
@@ -89,7 +90,6 @@ public class ReservationService {
             log.info("Notificação de confirmação enviada com sucesso para o email: {}", customerEmail);
         } catch (Exception e) {
             log.error("Erro ao enviar notificação: {}", e.getMessage(), e);
-            // Aqui você pode decidir se quer reverter a reserva ou apenas logar o erro
         }
 
         return savedReservation;

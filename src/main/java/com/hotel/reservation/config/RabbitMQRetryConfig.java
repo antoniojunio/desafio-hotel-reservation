@@ -29,8 +29,8 @@ public class RabbitMQRetryConfig {
                 .recoverer(new MethodInvocationRecoverer<Object>() {
                     @Override
                     public Object recover(Object[] args, Throwable cause) {
-                        // Aqui você pode adicionar a lógica de recuperação caso deseje
-                        return null;  // Ou outra ação
+                        // TODO Falta adicionar lógica de recuperação
+                        return null;  // Outra ação
                     }
                 })
                 .build();
