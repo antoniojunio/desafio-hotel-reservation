@@ -53,6 +53,5 @@ docker run -d --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:3-management
 ### Clonando o repositório
 
 ```bash
-git clone https://github.com/seu-usuario/hotel-reservation-api.git
-cd hotel-reservation-api
+git clone https:git@github.com:antoniojunio/desafio-hotel-reservation.git
 
